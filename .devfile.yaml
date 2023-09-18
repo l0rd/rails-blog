@@ -19,10 +19,8 @@ components:
       env: 
         - name: RAILS_DEVELOPMENT_HOSTS
           value: '.apps.che-dev.x6e0.p1.openshiftapps.com'
-        - name: DEVWORKSPACE_IDLE_TIMEOUT
-          value: 120s
         - name: SECONDS_OF_DW_INACTIVITY_BEFORE_IDLING
-          value: '120'
+          value: '-1'
       volumeMounts:
         - name: bundle-volume
           path: /home/user/.bundle/vendor
