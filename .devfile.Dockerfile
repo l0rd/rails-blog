@@ -1,4 +1,4 @@
-FROM quay.io/devfile/universal-developer-image:latest
+FROM quay.io/mloriedo/universal-developer-image:home-fix
 
 # The following commands require root
 USER 0
@@ -25,4 +25,3 @@ RUN bundle config --global path $HOME/.bundle/vendor && \
     chgrp -R 0 $HOME/.rbenv && chmod -R g=u $HOME/.rbenv
 
 USER 10001
-
