@@ -16,9 +16,6 @@ components:
       memoryLimit: 4G
       cpuRequest: '1'
       cpuLimit: '2'
-      env: 
-        - name: RAILS_DEVELOPMENT_HOSTS
-          value: '.apps.che-dev.x6e0.p1.openshiftapps.com'
       volumeMounts:
         - name: bundle-volume
           path: /home/user/.bundle/vendor
